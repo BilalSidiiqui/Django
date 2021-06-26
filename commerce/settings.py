@@ -153,9 +153,9 @@ EMAIL_HOST_PASSWORD = 'fa17bcsc'
 EMAIL_PORT = 587
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dexn8tnt9',
-    'API_KEY': '828443825275634',
-    'API_SECRET': 'oYWmlitChe7pZ7K9PatCNZaXfMk'
+    'CLOUD_NAME': 'artmandi',
+    'API_KEY': '834791741964821',
+    'API_SECRET': 'TIA8YHGH7sHS29ccf5UVAa7KnZ8'
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
