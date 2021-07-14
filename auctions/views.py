@@ -112,6 +112,7 @@ class Register(APIView):
         try:
             #Unique Email
             if User.objects.filter(email=email).exists():
+                print("Eabcdsd")
                 return JsonResponse({"message":"Email exists"})
             user = User.objects.create_user(username=username, password=password, email=email)
             user.is_active = False
