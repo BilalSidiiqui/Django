@@ -113,7 +113,7 @@ class Register(APIView):
             #Unique Email
             if User.objects.filter(email=email).exists():
                 print("Eabcdsd")
-                return JsonResponse({"message":"Email exists"})
+                return JsonResponse({"message":"Email exists"}, status = 404)
             user = User.objects.create_user(username=username, password=password, email=email)
             user.is_active = False
             user.save()
@@ -135,7 +135,7 @@ class Register(APIView):
 
             #return Response({"message":"Activate your Account"})
         except IntegrityError:
-            
+                        
             return JsonResponse({"message": "Username already taken."
             })
 
